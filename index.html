@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <title>Fortune Teller</title>
+  <body>
+    <div class="container">
+    <div class="jumbotron">
+      <h1>Get Your Fortune</h1>
+    </div>
+    <form id="fortune">
+      <div class="form-group">
+        <h2>What has been lucky in your life lately?</h2>
+        <input type="checkbox" name="luckyEvent" value="lottery"> Won the lottery<br>
+        <input type="checkbox" name="luckyEvent" value="whiteCat"> Saw a white cat<br>
+        <input type="checkbox" name="luckyEvent" value="money"> Found $100<br>
+        <input type="checkbox" name="luckyEvent" value="rainbow"> Saw a rainbow<br>
+        <input type="checkbox" name="luckyEvent" value="promotion"> You got promoted<br>
+      </div>
+      <div class="form-group">
+        <h2>What has been unlucky in your life lately?</h2>
+        <input type="checkbox" name="unluckyEvent" value="whistle"> You whistle<br>
+        <input type="checkbox" name="unluckyEvent" value="coin"> Find a penny<br>
+        <input type="checkbox" name="unluckyEvent" value="fired"> You got fired<br>
+        <input type="checkbox" name="unluckyEvent" value="leg"> You break your leg<br>
+        <input type="checkbox" name="unluckyEvent" value="lose"> Lose money<br>
+      </div>
+      <button type="submit" name="button">Get your fortune!</button>
+    </form>
+    <span id=luckyResponses>
+    <p><b>You have been lucky with these events:</b></p></span>
+    <span id=unluckyResponses>
+    <p><b>You have been unlucky with these events:</b></p></span>
+    <br>
+    <br>
+    <p><b><span id="result"></span></b></p>
+  </body>
+</html>
